@@ -1,6 +1,8 @@
 package no.hvl.dat108.f04;
 import static no.hvl.dat108.f04.People.people;
 
+import java.util.stream.Stream;
+
 /*
  * Eksempel4
  * 
@@ -24,6 +26,7 @@ public class Eksempel4 {
 		people.stream()
 				.filter(p -> p.getFirstName().startsWith("C"))
 				.forEach(System.out::println);
+		
 	}
 }
 
